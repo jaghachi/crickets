@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioacoustic Research Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span style="color: var(--accent-color)">🦗</span>
+            Bioacoustic Research Explorer
+        </h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search by title, species, goal or connection...">
+        </div>
+    </header>
+
+    <main>
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div id="total-count" class="stat-value">0</div>
+                <div class="stat-label">Total Papers</div>
+            </div>
+            <div class="stat-item">
+                <div id="connection-count" class="stat-value">0</div>
+                <div class="stat-label">Major Project Leads</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">AI/ML</div>
+                <div class="stat-label">Core Focus</div>
+            </div>
+        </div>
+
+        <div id="papers-grid" class="grid">
+            <!-- Cards will be injected here by JS -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Bioacoustic Research Lab. Data synthesized from summary.txt.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
